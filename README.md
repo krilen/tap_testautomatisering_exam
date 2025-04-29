@@ -6,16 +6,16 @@ Jag har testet websidan "https://tap-ht24-testverktyg.github.io/exam-template/" 
 
 
 ---
-## Köra testet
+## Köra testet: 'behave'
 
-För att köra testet måset först alla dependencies för python installeras
+För att köra testet måtet först alla dependencies för python installeras
 ```
 pip install -r requirements.txt
 ```
 
-Därefter kan testet köras
+Därefter kan testet
 ```
-python -m behave
+'behave' i "tests/" mappen
 ```
 
 ---
