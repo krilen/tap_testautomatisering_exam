@@ -40,7 +40,11 @@ def step_when__click_on_navbutton(context, testid):
     context.laslistan.navigation_button_click(testid)
 
 
-@then(u'bör jag se att den aktuella navigeringknappen, "{testid}", blivit deaktiverad samt ett specifikt "{divclass}" för ett div element')
-def step_then__verify_navigation_button_and_webpage(context, testid, divclass):
-    expect(context.page.locator("main").locator(divclass)).to_be_visible()
+@then(u'bör jag se att den aktuella navigeringknappen, "{testid}", blivit deaktiverad')
+def step_then__verify_navigation_button_deactivated(context, testid):
     expect(context.page.get_by_test_id(testid)).to_be_disabled()
+
+
+@then(u'självaste innehållet för sidan har ett div element med en speciell class: "{divclass}"')
+def step_then__verify_navigation_webpage(context, divclass):
+    expect(context.page.locator("main").locator(divclass)).to_be_visible()

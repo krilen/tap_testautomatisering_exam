@@ -31,7 +31,8 @@ Feature: Webbsidan Läslistan
 
     Scenario Outline: Bekräfta att man kommer till rätt sida vid navigering
         When när jag klickar på en navigeringsknapp med ett specifikt test-id: "<testid>"
-        Then bör jag se att den aktuella navigeringknappen, "<testid>", blivit deaktiverad samt ett specifikt "<divclass>" för ett div element
+        Then bör jag se att den aktuella navigeringknappen, "<testid>", blivit deaktiverad
+        And självaste innehållet för sidan har ett div element med en speciell class: "<divclass>"
 
         Examples:
             | testid    | divclass   |
