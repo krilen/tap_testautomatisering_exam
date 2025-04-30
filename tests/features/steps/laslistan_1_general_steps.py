@@ -14,7 +14,7 @@ def step_impl(context, title):
     expect(context.page).to_have_title(title)
 
 
-@then(u'att webbidan har en rubrik med texten "{headline}"')
+@then(u'att webbsidan har en rubrik med texten "{headline}"')
 def step_impl(context, headline):
     locator = context.laslistan.heading(headline)
 

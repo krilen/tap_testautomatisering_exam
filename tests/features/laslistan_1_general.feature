@@ -11,4 +11,4 @@ Feature: Webbsidan Läslistan
 
     Scenario: Bekräfta titel och rubrik på webbsidan
         Then bör jag se att titeln på webbsidan är "Läslistan"
-        And att webbidan har en rubrik med texten "Läslistan"
+        And att webbsidan har en rubrik med texten "Läslistan"

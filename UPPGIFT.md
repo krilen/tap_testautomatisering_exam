@@ -1,9 +1,10 @@
 # Examination
 
+[<< ReadMe](/README.md)
+
 ## Testverktyg
 
 _Du ska lösa uppgiften självständigt. När du tar hjälp av AI, eller diskuterar med andra studerande, ska du se till att du förstår vad koden gör._
-
 
 ---
 
@@ -16,8 +17,8 @@ Webbsidan som ska testas: [https://tap-ht24-testverktyg.github.io/exam-template/
 
 Du ska ha en README.md fil i projektets rotmapp, där du berättar
 
-* vad du har testat,  
-* hur man startar projektet.
+- vad du har testat,
+- hur man startar projektet.
 
 Börja med att läsa igenom hela uppgiften.
 
@@ -37,32 +38,30 @@ Börja med att läsa igenom hela uppgiften.
 
 ### Inlämning
 
-Skapa en textfil "exam1\_mitt\_namn.txt" som innehåller länk till ditt projekt på GitHub. Ladda upp textfilen på LearnPoint. Kom ihåg, det räcker inte med att ladda upp filen, du måste klicka på knappen för att lämna in också\!  
+Skapa en textfil "exam1_mitt_namn.txt" som innehåller länk till ditt projekt på GitHub. Ladda upp textfilen på LearnPoint. Kom ihåg, det räcker inte med att ladda upp filen, du måste klicka på knappen för att lämna in också\!
 
 ---
 
 ## För G krävs
 
-1. Det finns user stories som täcker all funktionalitet.  
-2. Alla user stories har minst en feature. Alla features har minst ett scenario.  
-3. Det går att starta ditt projekt, efter instruktionerna du har skrivit i README.md.  
+1. Det finns user stories som täcker all funktionalitet.
+2. Alla user stories har minst en feature. Alla features har minst ett scenario.
+3. Det går att starta ditt projekt, efter instruktionerna du har skrivit i README.md.
 4. Alla test är gröna.
 
 ## För VG krävs
 
-5. Högre kvalitet och kod som återanvänds.  
-6. Du använder designmönstret Page Object.  
-7. Du använder Scenario Outline.  
-8. Dina features försöker täcka alla meningsfulla möjligheter för motsvarande user story.  
+5. Högre kvalitet och kod som återanvänds.
+6. Du använder designmönstret Page Object.
+7. Du använder Scenario Outline.
+8. Dina features försöker täcka alla meningsfulla möjligheter för motsvarande user story.
 
-Exempel på meningsfulla möjligheter: testa inte bara att det går att favoritmarkera, utan att det går att ta bort en favoritmarkering, och vad som händer om man klickar fler än två gånger.  
+Exempel på meningsfulla möjligheter: testa inte bara att det går att favoritmarkera, utan att det går att ta bort en favoritmarkering, och vad som händer om man klickar fler än två gånger.
 
 ---
 
 ## Tips
 
-* Flera element på sidan har ett *testid* som [du kan använda med Playwright](https://playwright.dev/docs/locators#locate-by-test-id).  
-* Använd *headless* när du kommit en bit och när du lämnar in uppgiften. Det snabbar upp testandet rejält.  
-* Kom ihåg att testa att alla vyer gör det de ska, och att navigeringen fungerar.
-
-
+- Flera element på sidan har ett _testid_ som [du kan använda med Playwright](https://playwright.dev/docs/locators#locate-by-test-id).
+- Använd _headless_ när du kommit en bit och när du lämnar in uppgiften. Det snabbar upp testandet rejält.
+- Kom ihåg att testa att alla vyer gör det de ska, och att navigeringen fungerar.
