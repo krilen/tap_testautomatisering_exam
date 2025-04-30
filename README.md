@@ -26,5 +26,5 @@ Därefter kan testet köras genom 'behave' kommandot
 
 ### Sidor
 
-User stories som används för Behave: [User stories >>](/STORIES.md)  
-Examens uppgiften som skall lösas: [Uppgift>>](/UPPGIFT.md)
+User stories som används för Behave: [User Stories >>](/STORIES.md)  
+Examens uppgiften som skall lösas: [Exam uppgift >>](/UPPGIFT.md)
