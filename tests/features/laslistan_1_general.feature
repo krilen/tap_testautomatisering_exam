@@ -1,7 +1,7 @@
 Feature: Webbsidan Läslistan
 
     Background: Är på webbsidan
-        Given att jag befinner mig på webbsidan läslistan
+        Given att jag befinner mig på webbsidan Läslistan
 
 # US01
 # som en användare  

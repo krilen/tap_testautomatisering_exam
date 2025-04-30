@@ -51,6 +51,11 @@ som en användare
 vill jag säkerställa att toggligen vid markering av böcker fungerar  
 så att jag kan se att böcker kan väljas och avväljas.
 
+**USxx**
+som en användare  
+vill jag säkerställa att data-testid blir korrekt  
+så att jag det är säkert att använda testningen.
+
 ## Lägg till bok
 
 **US10**  
@@ -70,6 +75,11 @@ så att jag kan lägga till ytterligare en bokS.
 
 ## Mina böcker
 
+**USxx**
+som en användare  
+vill jag att det skall vara tomt på mina böcker sidan  
+så att jag får lägga till de böcker som jag vill.
+
 **US13**  
 som en användare  
 vill jag lägga till böcker på mina böcker sida  
@@ -77,7 +87,7 @@ så jag vet vilka böcker jag har valt av alla böcker.
 
 **US14**  
 som en användare  
-vill jag kunna ta bort böcker op mina böcker sida  
+vill jag kunna ta bort böcker på mina böcker sida  
 så jag vet att böcker kan tas bort om man väljer dem av misstag.
 
 ## Kombinationer
