@@ -17,12 +17,12 @@ så jag vet om en förändring har skett på antal navigeringsbara webbsidor.
 **US03**  
 som en användare  
 vill jag kunna kontrollera navigationsknapparna  
-så jag vet att deras namn och utseende ger rätt återkoppling till användaren.
+så jag vet att deras namn ger rätt återkoppling till användaren.
 
 **US04**
 som en användare  
-vill jag säkerställa att varje navigations knapp leder till rätt sida  
-så jag vet att knappen fungerar.
+vill jag säkerställa att varje navigations knapp leder till rätt sida och ger rätt återkoppling  
+så jag vet att knappen fungerar och indikerar vilken sida jag är på.
 
 ## Katalog med böcker
 
@@ -72,7 +72,7 @@ så att jag kan lägga till ytterligare en bokS.
 
 **US13**  
 som en användare  
-vill jag lägga till böcker på mina böcker sida
+vill jag lägga till böcker på mina böcker sida  
 så jag vet vilka böcker jag har valt av alla böcker.
 
 **US14**  
