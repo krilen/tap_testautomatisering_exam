@@ -26,7 +26,7 @@ så jag vet att knappen fungerar och indikerar vilken sida jag är på.
 
 ## Katalog med böcker
 
-~~**US05**~~ - struken
+~~**US05**~~ - struken  
 ~~som en användare~~  
 ~~vill jag kunna se att vilken bok jag är på med min mus~~  
 ~~så att jag säkert vet vilken bok jag kan välja.~~
