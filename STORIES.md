@@ -26,15 +26,15 @@ så jag vet att knappen fungerar och indikerar vilken sida jag är på.
 
 ## Katalog med böcker
 
-**US05**  
-som en användare  
-vill jag kunna se att vilken bok jag är på med min mus  
-så att jag säkert vet vilken bok jag kan välja.
+~~**US05**~~ - struken
+~~som en användare~~  
+~~vill jag kunna se att vilken bok jag är på med min mus~~  
+~~så att jag säkert vet vilken bok jag kan välja.~~
 
 **US06**  
 som en användare  
-vill jag kunna välja en bok  
-så att den blir markerad som vald.
+vill jag kunna klicka på rätt ställe på en bok rad för att välja en bok  
+så att den då blir blir markerad som vald.
 
 **US07**  
 som en användare  
@@ -43,18 +43,13 @@ så att jag vet att den redan har blivit vald.
 
 **US08**  
 som en användare  
-vill jag kunna avmarkera en bok  
+vill jag kunna avmarkera en bok som redan är vald  
 så jag vet att boken inte längre är vald.
 
 **US09**  
 som en användare  
-vill jag säkerställa att toggligen vid markering av böcker fungerar  
+vill jag säkerställa att toggligen vid markering och avmarkering av böcker fungerar  
 så att jag kan se att böcker kan väljas och avväljas.
-
-**USxx**
-som en användare  
-vill jag säkerställa att data-testid blir korrekt  
-så att jag det är säkert att använda testningen.
 
 ## Lägg till bok
 
@@ -75,7 +70,7 @@ så att jag kan lägga till ytterligare en bokS.
 
 ## Mina böcker
 
-**USxx**
+**US15**
 som en användare  
 vill jag att det skall vara tomt på mina böcker sidan  
 så att jag får lägga till de böcker som jag vill.
@@ -91,3 +86,28 @@ vill jag kunna ta bort böcker på mina böcker sida
 så jag vet att böcker kan tas bort om man väljer dem av misstag.
 
 ## Kombinationer
+
+**US16**  
+som en användare  
+vill jag att en bok som läggs till hamnar i katalogen och får ett korrekt testid  
+så att man kan hantera böcker som läggs till på samma sätt som befintliga böcker.
+
+**US17**  
+som en användare  
+vill jag kunna lägga till en bok  
+som jag sedan kan markera och avmarkera boken i katalogen.
+
+**US18**  
+som en användare  
+vill jag kunna lägga till en bok och markera boken i katalogen  
+så att hamnar på sidan med mina böcker.
+
+**US19**  
+som en användare  
+vill jag kunna lägga till en bok, markera och sedan avmarkera boken i katalogen  
+så att boken först hamnar på sidan och sedan tas bort från sidan med mina böcker.
+
+**US20**  
+som en användare  
+vill jag säkerställa att ordningen på böckerna på mina böcker  
+så att ordningen kopplas till ordningen som böckerna markerades i katalogen.

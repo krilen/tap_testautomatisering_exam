@@ -99,8 +99,8 @@ class Laslistan():
         else:
             book_info.append(author)
     
-        self.page.get_by_test_id("add-input-title").fill(book_info[0])
-        self.page.get_by_test_id("add-input-author").fill(book_info[1])
+        self.page.get_by_test_id("add-input-title").fill(book_info[0][1:-1])
+        self.page.get_by_test_id("add-input-author").fill(book_info[1][1:-1])
 
 
     # My books page
@@ -108,3 +108,34 @@ class Laslistan():
     @property
     def my_books_page_empty(self):
         return self.page.get_by_text(re.compile("När du valt, kommer dina favoritböcker att visas här", re.IGNORECASE))
+    
+    # Catalog
+    
+    @property
+    def count_catalog_bookrows(self):
+        return self.page.locator("main").locator(".book").count()
+
+
+    def get_testid_bookrow(self, bookrow, prefix="star-"):
+        
+        if not isinstance(bookrow, str):
+            return None
+        
+        if bookrow == "L":
+            book_index = self.count_catalog_bookrows -1
+            
+        elif bookrow == "F":
+            book_index = 0
+            
+        else:
+            try:
+                book_index = int(bookrow)
+                
+            except:
+                return None
+            
+        return prefix +self.page.locator("main").locator(".book").nth(book_index).inner_text().split("\"")[1]
+    
+    
+    def verify_catalog_text(self, text):
+        return self.page.locator("main").locator(".book").last.get_by_text(re.compile(text, re.IGNORECASE))

@@ -44,6 +44,6 @@ def step_then__verify_if_book_can_be_added(context, accepteras):
     else:
         expect(context.page.get_by_test_id("add-submit")).to_be_disabled()
         
-@when(u'klickar man på lägga till ny bok knappen')
+@when(u'klickar man på lägg till ny bok knappen')
 def step_when__click_to_add_book(context):
     context.page.get_by_test_id("add-submit").click(timeout=200)

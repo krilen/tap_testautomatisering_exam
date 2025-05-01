@@ -1,6 +1,6 @@
 Feature: Lägga till böcker
 
-    Background: Är på webbsidan och sidan lägg till bok
+    Background: Är på webbsidan och sidan "Lägg till bok"
         Given att jag befinner mig på webbsidan Läslistan och sidan lägg till bok
 
 # US10
@@ -31,5 +31,5 @@ Feature: Lägga till böcker
     Scenario: Lägga till en bok och nollställda fält
         Then när man kommer till lägg till bok sidan bör inte en bok kunnas läggas till
         When man skriver in titel och författare till en bok
-        When klickar man på lägga till ny bok knappen
+        When klickar man på lägg till ny bok knappen
         Then fälten för titel och författare skall vara tomma
