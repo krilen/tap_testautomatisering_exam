@@ -23,3 +23,17 @@ def step_then__my_books_page_empty(context):
     locator = context.laslistan.my_books_page_empty
     
     expect(locator).not_to_be_visible()
+
+
+@then(u'kan man se att boken finns listad som en favoritbok: "{title}"')
+def step_then__book_listed_as_favorite(context, title):
+    testid = context.laslistan.get_testid_by_booktitle(title, "fav")
+
+    expect(context.page.get_by_test_id(testid)).to_be_visible()
+
+
+@then(u'kan man se att boken inte finns listad som en favoritbok: "{title}"')
+def step_then__book_not_listed_as_favorite(context, title):
+    testid = context.laslistan.get_testid_by_booktitle(title, "fav")
+
+    expect(context.page.get_by_test_id(testid)).not_to_be_visible()

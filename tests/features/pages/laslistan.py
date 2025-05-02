@@ -6,8 +6,6 @@ def parse_empty_string(v):
     else:
         return v[1:-1]
 
-
-
 class Laslistan():
     
     
@@ -34,14 +32,6 @@ class Laslistan():
         Method to get the navigation part of the page
         """
         return self.page.get_by_role("navigation")
-
-
-    #@property
-    #def navigation_buttons(self):
-    #	"""
-    #	Method to get the navigation buttons on the page
-    #	"""
-    #	return self._navigation.get_by_role("button")
 
 
     def verify_navigation_button(self, name, testid):
@@ -107,16 +97,31 @@ class Laslistan():
     
     @property
     def my_books_page_empty(self):
+        """
+        Methond that checks to see if the default text when no books are listed
+        is present on the webpage
+        """
         return self.page.get_by_text(re.compile("När du valt, kommer dina favoritböcker att visas här", re.IGNORECASE))
     
     # Catalog
     
     @property
     def count_catalog_bookrows(self):
+        """
+        Method that counts the number of books that are listed in the catalog
+        """
         return self.page.locator("main").locator(".book").count()
 
 
-    def get_testid_bookrow(self, bookrow, prefix="star-"):
+    def get_testid_by_bookrow(self, bookrow):
+        """
+        Method that gets the test id by fetching a bookrow in the catalog and
+        convering the title into a testid
+        Takes a parameter for which row.
+         - F: means the first row, also known as row 0
+         - L: means the last row
+         - Any number will be the requested row by number always starts with 0
+        """
         
         if not isinstance(bookrow, str):
             return None
@@ -134,8 +139,27 @@ class Laslistan():
             except:
                 return None
             
-        return prefix +self.page.locator("main").locator(".book").nth(book_index).inner_text().split("\"")[1]
-    
-    
+        return "star-" +self.page.locator("main").locator(".book").nth(book_index).inner_text().split("\"")[1]
+
+
+    def get_testid_by_booktitle(self, booktitle, prefix="star"):
+        """
+        Method that converts a book title into a testid
+        Takes a title
+        And a prefix
+         - "star": for the catalog
+         - "fav": for my books
+        """
+        
+        if not isinstance(booktitle, str):
+            return None
+            
+        return prefix +"-" +booktitle
+
+
     def verify_catalog_text(self, text):
+        """
+        Finds a specific text in the catalog
+        Takes a text and a parameter
+        """
         return self.page.locator("main").locator(".book").last.get_by_text(re.compile(text, re.IGNORECASE))

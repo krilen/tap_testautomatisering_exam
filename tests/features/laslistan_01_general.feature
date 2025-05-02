@@ -1,3 +1,4 @@
+@general
 Feature: Webbsidan Läslistan
 
     Background: Är på webbsidan
@@ -8,6 +9,7 @@ Feature: Webbsidan Läslistan
 # vill jag säkerställa att webbsidan rubrik och title stämmer  
 # så jag är säker på att jag är på rätt ställe
 
+    @online
     Scenario: Bekräfta titel och rubrik på webbsidan
         Then bör jag se att titeln på webbsidan är "Läslistan"
         And att webbsidan har en rubrik med texten "Läslistan"

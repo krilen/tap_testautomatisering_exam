@@ -1,3 +1,4 @@
+@catalog
 Feature: Katalog
 
     Background: Är på webbsidan och sidan "Katalog"

@@ -1,3 +1,4 @@
+@addbook
 Feature: Lägga till böcker
 
     Background: Är på webbsidan och sidan "Lägg till bok"

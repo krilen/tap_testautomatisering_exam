@@ -1,3 +1,4 @@
+@combo
 Feature: Lägg till en bok och markera och avmarkera boken i katalogen
 
 # US17

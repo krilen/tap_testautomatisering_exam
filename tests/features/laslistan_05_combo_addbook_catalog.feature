@@ -1,3 +1,4 @@
+@combo
 Feature: Lägg till bok och säkerställ att den hamnar i katalogen
 
 # US16

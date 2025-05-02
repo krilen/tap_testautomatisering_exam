@@ -1,3 +1,4 @@
+@mybooks
 Feature: Mina böcker
 
     Background: Är på webbsidan och sidan "Mina böcker"

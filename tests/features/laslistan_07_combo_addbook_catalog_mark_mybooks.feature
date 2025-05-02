@@ -1,3 +1,4 @@
+@combo
 Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
 
 # US18
@@ -15,6 +16,7 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
         When klickar på markeringsknappen för bokraden, "L"
         When går till mina böcker sidan
         Then när man kommer till mina böcker sidan informeras man inte längre om att här listas favoritböcker
+        And kan man se att boken finns listad som en favoritbok: "<titel>"
 
         Examples:
             | titel         | forfattare          |
@@ -39,10 +41,13 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
         When klickar på markeringsknappen för bokraden, "L"
         When går till mina böcker sidan
         Then när man kommer till mina böcker sidan informeras man inte längre om att här listas favoritböcker
+        And kan man se att boken finns listad som en favoritbok: "<titel>"
         When går till katalogsidan
         When klickar på markeringsknappen för bokraden, "L"
         When går till mina böcker sidan
         Then när man kommer till mina böcker sidan informeras man om att det inte finns några favoritböcker listade
+        And kan man se att boken inte finns listad som en favoritbok: "<titel>"
+        
 
         Examples:
             | titel         | forfattare          |

@@ -1,3 +1,4 @@
+@combo
 Feature: Kontrollera ordningen på mina böcker sidan
 
 # US20
@@ -17,7 +18,7 @@ Feature: Kontrollera ordningen på mina böcker sidan
         And klickar man på lägg till ny bok knappen
         When går till katalogsidan
         # Here I am 
-        # 0. After creating the list below lets make it somplear to add books
+        # 0. After creating the list below lets make it simplear to add books
         # 1. Lets mark all of the books from last to first 
         # 2. Verify the order on my books page
         # 3. REmove the second by by unmarking it
