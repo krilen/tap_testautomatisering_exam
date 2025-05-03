@@ -11,14 +11,14 @@ def step_given__on_the_webpage_my_books(context):
     context.laslistan.navigation_button_click("favorites")
     
 
-@then(u'när man kommer till mina böcker sidan informeras man om att det inte finns några favoritböcker listade')
+@then(u'när man kommer till mina böcker sidan informeras man om att här kommer dina favoritböcker listas')
 def step_then__my_books_page_empty(context):
     locator = context.laslistan.my_books_page_empty
     
     expect(locator).to_be_visible()
     
 
-@then(u'när man kommer till mina böcker sidan informeras man inte längre om att här listas favoritböcker')
+@then(u'när man kommer till mina böcker sidan informeras man inte längre om att här kommer favoritböcker att listas')
 def step_then__my_books_page_empty(context):
     locator = context.laslistan.my_books_page_empty
     

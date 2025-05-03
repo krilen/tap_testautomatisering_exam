@@ -10,4 +10,4 @@ Feature: Mina böcker
 # så att jag får lägga till de böcker som jag vill.
 
     Scenario: Kommer till mina böcker sidan utan några favoritböcker listade
-        Then när man kommer till mina böcker sidan informeras man om att det inte finns några favoritböcker listade
+        Then när man kommer till mina böcker sidan informeras man om att här kommer dina favoritböcker listas

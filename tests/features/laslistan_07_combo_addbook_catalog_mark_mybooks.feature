@@ -11,11 +11,11 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
         When man skriver in titel och författare till en bok: "<titel>", "<forfattare>"
         And klickar man på lägg till ny bok knappen
         When går till mina böcker sidan
-        Then när man kommer till mina böcker sidan informeras man om att det inte finns några favoritböcker listade
+        Then när man kommer till mina böcker sidan informeras man om att här kommer dina favoritböcker listas
         When går till katalogsidan
         When klickar på markeringsknappen för bokraden, "L"
         When går till mina böcker sidan
-        Then när man kommer till mina böcker sidan informeras man inte längre om att här listas favoritböcker
+        Then när man kommer till mina böcker sidan informeras man inte längre om att här kommer favoritböcker att listas
         And kan man se att boken finns listad som en favoritbok: "<titel>"
 
         Examples:
@@ -40,12 +40,12 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
         When går till katalogsidan
         When klickar på markeringsknappen för bokraden, "L"
         When går till mina böcker sidan
-        Then när man kommer till mina böcker sidan informeras man inte längre om att här listas favoritböcker
+        Then när man kommer till mina böcker sidan informeras man inte längre om att här kommer favoritböcker att listas
         And kan man se att boken finns listad som en favoritbok: "<titel>"
         When går till katalogsidan
         When klickar på markeringsknappen för bokraden, "L"
         When går till mina böcker sidan
-        Then när man kommer till mina böcker sidan informeras man om att det inte finns några favoritböcker listade
+        Then när man kommer till mina böcker sidan informeras man om att här kommer dina favoritböcker listas
         And kan man se att boken inte finns listad som en favoritbok: "<titel>"
         
 

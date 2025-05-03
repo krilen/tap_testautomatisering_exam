@@ -109,5 +109,5 @@ så att boken först hamnar på sidan och sedan tas bort från sidan med mina b�
 
 **US20**  
 som en användare  
-vill jag säkerställa att ordningen på böckerna på mina böcker  
-så att ordningen kopplas till ordningen som böckerna markerades i katalogen.
+vill jag säkerställa att ordningen på böckerna på mina böcker sidan
+så att ordningen kopplas till ordningen som böckerna i katalogen är i.
