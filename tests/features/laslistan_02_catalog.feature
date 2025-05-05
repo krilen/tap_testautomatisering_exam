@@ -44,7 +44,7 @@ Feature: Katalog
             | 4      |
             | L      |
 
-# US09**
+# US09
 # som en användare
 # vill jag säkerställa att toggligen av markering och avmarkering av böcker fungerar
 # så att jag kan se att böcker kan markeras eller avmarkeras.

@@ -26,8 +26,8 @@ så jag vet att knappen fungerar och jag kommer till rätt sida.
 
 ## Katalog med böcker
 
-~~**US05**~~
-struken  
+~~**US05**~~  
+struken
 
 **US06**  
 som en användare  
