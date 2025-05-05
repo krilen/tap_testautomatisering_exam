@@ -4,7 +4,7 @@ Feature: Lägg till en bok och markera och avmarkera boken i katalogen
 # US17
 # som en användare
 # vill jag kunna lägga till en bok
-# som jag sedan kan markera och avmarkera boken i katalogen.
+# som jag sedan kan markera och avmarkera i katalogen.
 
     Scenario Outline: Lägg till en bok och markera och avmarkera boken i katalogen
         Given att jag befinner mig på webbsidan Läslistan och sidan lägg till bok
@@ -25,3 +25,4 @@ Feature: Lägg till en bok och markera och avmarkera boken i katalogen
             | Röde Orm      | Frans. G. Bengtsson |
             | Madame Bovary | Gustave Flaubert    |
             | 1             | 2                   |
+

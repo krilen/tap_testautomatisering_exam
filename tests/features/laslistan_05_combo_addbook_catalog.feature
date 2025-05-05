@@ -1,9 +1,9 @@
 @combo
 Feature: Lägg till bok och säkerställ att den hamnar i katalogen
 
-# US16
+# US16  
 # som en användare  
-# vill jag att en bok som läggs till hamnar i katalogen och får ett korrekt testid  
+# vill jag att en bok som läggs till hamnar i katalogen för böcker och får ett korrekt testid  
 # så att man kan hantera böcker som läggs till på samma sätt som befintliga böcker.
 
     Scenario Outline: Lägg till bok och säkerställ att den hamnar i katalogen
@@ -21,3 +21,4 @@ Feature: Lägg till bok och säkerställ att den hamnar i katalogen
             | Röde Orm      | Frans. G. Bengtsson | star-Röde Orm      |
             | Madame Bovary | Gustave Flaubert    | star-Madame Bovary |
             | 1             | 2                   | star-1             |
+

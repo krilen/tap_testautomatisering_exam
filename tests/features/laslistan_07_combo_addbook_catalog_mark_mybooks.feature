@@ -27,11 +27,10 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
             | Madame Bovary | Gustave Flaubert    |
             | 1             | 2                   |
 
-
 # US19
 # som en användare
-# vill jag kunna lägga till en bok, markera och sedan avmarkera boken i katalogen
-# så att boken först hamnar på sidan och sedan tas bort från sidan med mina böcker.
+# vill jag kunna lägga till en bok, markera boken och sedan avmarkera boken i katalogen
+# så att boken först hamnar på mina böcker sidan sidan och sedan tas bort från mina böcker sidan.
 
     Scenario Outline: Lägg till en bok och markera boken och boken hamnar på mina böcker sidan, sedan avmarkera boken och boken förvinner från mina böcker sidan
         Given att jag befinner mig på webbsidan Läslistan och sidan lägg till bok
@@ -48,7 +47,6 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
         Then när man kommer till mina böcker sidan informeras man om att här kommer dina favoritböcker listas
         And kan man se att boken inte finns listad som en favoritbok: "<titel>"
         
-
         Examples:
             | titel         | forfattare          |
             | a             | b                   |
@@ -57,3 +55,4 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
             | Röde Orm      | Frans. G. Bengtsson |
             | Madame Bovary | Gustave Flaubert    |
             | 1             | 2                   |
+
