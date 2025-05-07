@@ -16,15 +16,15 @@ Jag har testet websidan "https://tap-ht24-testverktyg.github.io/exam-template/" 
 
 ### Övrigt information om testerna
 
-Totalt har 8 st features med tillhörande steps filer skapats, koncentarionen av "steps" finns i de första 4 filerna. För kombinationerna har nästan allt kunnats återanvändas från tidigare steps filer till de scenariorna.
+Totalt har 8 st features med tillhörande steps filer skapats, koncentrationen av "steps" finns i de första 4 filerna. För kombinationerna har nästan allt kunnats återanvändas från tidigare steps filer till de scenariorna.
 
 Totalt är det 48 st scenarion och 319 steps, stort tack till de olika Scenario Outlines.
 
-Har haft som mål att flytta "allt" Python till Page objectet, laslistan.py.
+Har haft som mål att flytta allt "Python" till Page objectet, laslistan.py.
 
 Skrivit alla scenarion på Svenska men valde att skriva det teknika inklusive Page objectet på Engelska.
 
-Har lagt några taggar på de olika scenariona, se nedan för mer detaljer.
+Har lagt några taggar på de olika scenariorna, se nedan för mer detaljer.
 
 ### User story nr 5
 Eftersom jag skrev user stories innan jag påbörjade att skriva testerna så när jag kom till att skriva testet för user story nummer 5 kom jag inte på hur eller om det ens var möjligt att utföra testet så som jag vill. Valde därför att sätt denna user story som struken istället för att omnumrera.
