@@ -3,6 +3,7 @@ from playwright.sync_api import expect
 
 from pages.laslistan import Laslistan
 
+
 @given(u'att man befinner sig på webbsidan Lässidan och sidan katalog')
 def step_given__on_the_webpage_my_books(context):
     context.laslistan = Laslistan(context.page)

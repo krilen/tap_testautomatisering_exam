@@ -7,7 +7,7 @@ Feature: Kontrollera ordningen på mina böcker sidan
 # så att ordningen inte påverkas av i vilken orning jag markerade böckerna i katalogen.
 
     Scenario: Säkerställ att ordningen på sidan mina böcker är baserad på ordningen från katalog sidan
-        Given att jag befinner mig på webbsidan Läslistan och sidan lägg till bok
+        Given att man befinner sig på webbsidan Läslistan och sidan lägg till bok
         When man skriver in titel och författare till en bok: "Mody Dick", "Herman Melville"
         And klickar man på lägg till ny bok knappen
         When går till mina böcker sidan
@@ -18,4 +18,3 @@ Feature: Kontrollera ordningen på mina böcker sidan
         When går till mina böcker sidan
         Then när man kommer till mina böcker sidan informeras man inte längre om att här kommer favoritböcker att listas
         And ordningen på böckerna är den som i katalogen med "Mody Dick" som sist
-

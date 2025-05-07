@@ -7,7 +7,7 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
 # så att hamnar på sidan med mina böcker.
 
     Scenario Outline: Lägg till en bok och markera boken och boken hamnar på mina böcker sidan
-        Given att jag befinner mig på webbsidan Läslistan och sidan lägg till bok
+        Given att man befinner sig på webbsidan Läslistan och sidan lägg till bok
         When man skriver in titel och författare till en bok: "<titel>", "<forfattare>"
         And klickar man på lägg till ny bok knappen
         When går till mina böcker sidan
@@ -33,7 +33,7 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
 # så att boken först hamnar på mina böcker sidan sidan och sedan tas bort från mina böcker sidan.
 
     Scenario Outline: Lägg till en bok och markera boken och boken hamnar på mina böcker sidan, sedan avmarkera boken och boken förvinner från mina böcker sidan
-        Given att jag befinner mig på webbsidan Läslistan och sidan lägg till bok
+        Given att man befinner sig på webbsidan Läslistan och sidan lägg till bok
         When man skriver in titel och författare till en bok: "<titel>", "<forfattare>"
         And klickar man på lägg till ny bok knappen
         When går till katalogsidan
@@ -55,4 +55,3 @@ Feature: Lägg till en bok och markera och boken hamnar på mina böcker sidan
             | Röde Orm      | Frans. G. Bengtsson |
             | Madame Bovary | Gustave Flaubert    |
             | 1             | 2                   |
-

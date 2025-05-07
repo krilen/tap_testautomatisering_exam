@@ -1,9 +1,10 @@
-from behave import given, when, then
+from behave import given, then
 from playwright.sync_api import expect
 
 from pages.laslistan import Laslistan
 
-@given(u'att jag befinner mig på webbsidan Lässidan och sidan mina böcker')
+
+@given(u'att man befinner sig på webbsidan Lässidan och sidan mina böcker')
 def step_given__on_the_webpage_my_books(context):
     context.laslistan = Laslistan(context.page)
     context.page.goto(context.base_url)

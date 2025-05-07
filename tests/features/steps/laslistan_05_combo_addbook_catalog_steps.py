@@ -1,7 +1,6 @@
 from behave import then
 from playwright.sync_api import expect
 
-from pages.laslistan import Laslistan
 
 @then(u'när man går till katalogens sida har boken med dess titel: "{titel}" och författare: "{forfattare}" hamnat i listan med böcker')
 def step_then(context, titel, forfattare):
@@ -17,6 +16,3 @@ def step_then(context, titel, forfattare):
 @then(u'ett korrekt katalog testid: "{testid}" har skapats')
 def step_impl(context, testid):
     expect(context.page.get_by_test_id(testid)).to_be_visible()
-
-
-

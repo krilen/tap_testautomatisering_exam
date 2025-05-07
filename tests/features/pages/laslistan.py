@@ -1,15 +1,17 @@
 import re
 from playwright.sync_api import Page
 
+
 def parse_empty_string(v):
     if v == '""':
         return None
     else:
         return v[1:-1]
 
+
 class Laslistan():
     
-    def __init__(self, page) -> None:
+    def __init__(self, page: Page) -> None:
         self.page = page
 
 
@@ -22,6 +24,7 @@ class Laslistan():
         found heading element with the text
         """
         if not isinstance(text, str):
+            print("The heading of the page must be of type string")
             return None
 
         search_text = re.compile(text, re.IGNORECASE)
@@ -44,6 +47,7 @@ class Laslistan():
         By selecting the navigation button using its testid and verifying that button has that name
         """
         if not isinstance(name, str) or not isinstance(testid, str):
+            print("Both the testid and name of the button must be of type string")
             return None
 
         return self._navigation.get_by_test_id(testid).get_by_text(re.compile(name, re.IGNORECASE))
@@ -102,7 +106,7 @@ class Laslistan():
     @property
     def my_books_page_empty(self) -> Page:
         """
-        Methond that checks to see if the default text when no books are listed
+        Method that checks to see if the default text when no books are listed
         is present on the webpage
         """
         return self.page.get_by_text(re.compile("När du valt, kommer dina favoritböcker att visas här", re.IGNORECASE))
@@ -138,6 +142,7 @@ class Laslistan():
          - Any number will be the requested row by number always starts with 0
         """
         if not isinstance(bookrow, str):
+            print("The bookrow in must be of type string")
             return None
         
         if bookrow == "L":
@@ -151,6 +156,7 @@ class Laslistan():
                 book_index = int(bookrow)
                 
             except:
+                print("The bookrow (string) can not be converted into an int")
                 return None
             
         return "star-" +self.page.locator("main").locator(".book").nth(book_index).inner_text().split("\"")[1]
@@ -165,6 +171,7 @@ class Laslistan():
          - "fav": for my books
         """
         if not isinstance(booktitle, str):
+            print("The book title must be of type string")
             return None
             
         return prefix +"-" +booktitle
@@ -172,7 +179,7 @@ class Laslistan():
 
     def verify_catalog_text(self, text: str):
         """
-        Finds a specific text in the catalog
+        Method that finds a specific text in the catalog
         Takes a text and a parameter
         """
         return self.page.locator("main").locator(".book").last.get_by_text(re.compile(text, re.IGNORECASE))
@@ -186,6 +193,7 @@ class Laslistan():
         books_exist = []
         
         if not isinstance(bookrows, (int, list)):
+            print("The book row must be pf type list (with ints) or an int")
             return None
         
         if isinstance(bookrows, int):

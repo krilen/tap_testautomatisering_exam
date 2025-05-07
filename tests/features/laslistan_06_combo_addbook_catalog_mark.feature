@@ -7,7 +7,7 @@ Feature: Lägg till en bok och markera och avmarkera boken i katalogen
 # som jag sedan kan markera och avmarkera i katalogen.
 
     Scenario Outline: Lägg till en bok och markera och avmarkera boken i katalogen
-        Given att jag befinner mig på webbsidan Läslistan och sidan lägg till bok
+        Given att man befinner sig på webbsidan Läslistan och sidan lägg till bok
         When man skriver in titel och författare till en bok: "<titel>", "<forfattare>"
         And klickar man på lägg till ny bok knappen
         When går till katalogsidan
@@ -25,4 +25,3 @@ Feature: Lägg till en bok och markera och avmarkera boken i katalogen
             | Röde Orm      | Frans. G. Bengtsson |
             | Madame Bovary | Gustave Flaubert    |
             | 1             | 2                   |
-

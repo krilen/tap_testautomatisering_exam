@@ -1,6 +1,7 @@
 from behave import when, then
 from playwright.sync_api import expect
 
+
 @when(u'markerar böcker i en speciell ordning: "{order}"')
 def step_when__marking_books_special_order(context, order):
     bocker_markerad_ordning = context.laslistan.verify_book([int(b) for b in order.split(",")])
@@ -17,4 +18,3 @@ def step_impl(context, last_title):
     
     for i in range(favoriter_lista.count()):
         expect(favoriter_lista.nth(i).get_by_text(markerade_bocker_favoriter[i])).to_be_visible()
-

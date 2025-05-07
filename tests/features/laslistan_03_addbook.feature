@@ -2,7 +2,7 @@
 Feature: Lägga till böcker
 
     Background: Är på webbsidan och sidan "Lägg till bok"
-        Given att jag befinner mig på webbsidan Läslistan och sidan lägg till bok
+        Given att man befinner sig på webbsidan Läslistan och sidan lägg till bok
 
 # US10
 # som en användare
@@ -42,4 +42,3 @@ Feature: Lägga till böcker
         When man skriver in titel och författare till en bok
         When klickar man på lägg till ny bok knappen
         Then fälten för titel och författare skall vara tomma
-

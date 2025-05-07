@@ -2,7 +2,7 @@
 Feature: Webbsidan Läslistan
 
     Background: Är på webbsidan
-        Given att jag befinner mig på webbsidan Läslistan
+        Given att man befinner sig på webbsidan Läslistan
 
 # US01
 # som en användare
@@ -11,7 +11,7 @@ Feature: Webbsidan Läslistan
 
     @online
     Scenario: Bekräfta titel och rubrik på webbsidan
-        Then bör jag se att titeln på webbsidan är "Läslistan"
+        Then bör man se att titeln på webbsidan är "Läslistan"
         And att webbsidan har en rubrik med texten "Läslistan"
 
 # US02
@@ -20,7 +20,7 @@ Feature: Webbsidan Läslistan
 # så jag vet är medvetan om hur många navigerings knappar på webbsidan det skall vara.
 
     Scenario: Bekräfta antal navigeringsknappar på webbsidan
-        Then bör jag kunna se att det finns "3" st navigationsknappar på webbsidan
+        Then bör man kunna se att det finns "3" st navigationsknappar på webbsidan
 
 # US03
 # som en användare
@@ -28,7 +28,7 @@ Feature: Webbsidan Läslistan
 # så jag vet att deras namn ger rätt återkoppling till användaren.
 
     Scenario: Bekräfta namn och testid på navigeringsknappar på webbsidan
-        Then bör jag kunna se att det är rätt namn och testid på vardera navigationsknapp på webbsidan
+        Then bör man kunna se att det är rätt namn och testid på vardera navigationsknapp på webbsidan
             | namn          | testid    | count |
             | Katalog       | catalog   | 1     |
             | Lägg till bok | add-book  | 1     |
@@ -41,8 +41,8 @@ Feature: Webbsidan Läslistan
 # så jag vet att knappen fungerar och jag kommer till rätt sida.
 
     Scenario Outline: Bekräfta att man kommer till rätt sida vid navigering
-        When när jag klickar på en navigeringsknapp med ett specifikt test-id: "<testid>"
-        Then bör jag se att den aktuella navigeringknappen, "<testid>", blivit deaktiverad
+        When när man klickar på en navigeringsknapp med ett specifikt test-id: "<testid>"
+        Then bör man se att den aktuella navigeringknappen, "<testid>", blivit deaktiverad
         And självaste innehållet för sidan har ett div element med en speciell class: "<divclass>"
 
         Examples:
@@ -50,4 +50,3 @@ Feature: Webbsidan Läslistan
             | catalog   | .catalog   |
             | add-book  | .form      |
             | favorites | .favorites |
-

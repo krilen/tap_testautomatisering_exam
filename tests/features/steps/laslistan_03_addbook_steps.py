@@ -3,12 +3,14 @@ from playwright.sync_api import expect
 
 from pages.laslistan import Laslistan
 
-@given(u'att jag befinner mig på webbsidan Läslistan och sidan lägg till bok')
+
+@given(u'att man befinner sig på webbsidan Läslistan och sidan lägg till bok')
 def step_given__on_the_webpage_add_books(context):
     context.laslistan = Laslistan(context.page)
     context.page.goto(context.base_url)
     
     context.laslistan.navigation_button_click("add-book")
+
 
 @then(u'när man kommer till lägg till bok sidan bör inte en bok kunnas läggas till')
 def step_then__add_book_page(context):
@@ -43,7 +45,8 @@ def step_then__verify_if_book_can_be_added(context, accepteras):
         
     else:
         expect(context.page.get_by_test_id("add-submit")).to_be_disabled()
-        
+
+
 @when(u'klickar man på lägg till ny bok knappen')
 def step_when__click_to_add_book(context):
     context.page.get_by_test_id("add-submit").click(timeout=200)
