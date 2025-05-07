@@ -45,6 +45,8 @@ Därefter kan testet köras genom 'behave' kommandot
 'behave' - körs i "tests/" mappen. Detta köra alla scenarion
 ```
 
+### Taggar
+
 Det finns taggar för vissa scenarion
 
 - 'online': Scenario som kontrollerar on webplatsen som skall konttolleras kan nås
